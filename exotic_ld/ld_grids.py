@@ -1,7 +1,7 @@
 import os
 import pickle
 import numpy as np
-import pkg_resources
+from importlib.resources import files
 from scipy.spatial import KDTree
 
 from exotic_ld.ld_requests import download
@@ -41,9 +41,8 @@ class StellarGrids(object):
                            self.logg_input / self._r_logg])
 
     def _get_stellar_model_kd_tree(self):
-        tree_path = pkg_resources.resource_filename(
-            "grid_build.kd_trees", "{}_tree{}.pickle".format(
-                self.ld_model, self._ld_data_version))
+        filename = "{}_tree{}.pickle".format(self.ld_model, self._ld_data_version)
+        tree_path = str(resources.files("grid_build.kd_trees").joinpath(filename))
         try:
             with open(tree_path, "rb") as f:
                 self._stellar_kd_tree = pickle.load(f)
