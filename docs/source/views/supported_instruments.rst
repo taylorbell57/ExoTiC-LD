@@ -12,7 +12,7 @@ Spectroscopic
     |                        'HST_WFC3_G141'
 
     | JWST NIRSpec : 'JWST_NIRSpec_Prism', 'JWST_NIRSpec_G395H', 'JWST_NIRSpec_G395M',
-    |                'JWST_NIRSpec_G235H', 'JWST_NIRSpec_G235M', 'JWST_NIRSpec_G140H',
+    |                'JWST_NIRSpec_G235H', 'JWST_NIRSpec_G235M', 'JWST_NIRSpec_G140H-f100',
     |                'JWST_NIRSpec_G140M-f100', 'JWST_NIRSpec_G140H-f070', 'JWST_NIRSpec_G140M-f070'
 
     | JWST NIRISS  : 'JWST_NIRISS_SOSSo1', 'JWST_NIRISS_SOSSo2'
